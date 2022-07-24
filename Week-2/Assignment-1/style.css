@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(134, 229, 255);
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 5px;
+    height: 100%;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+}
+
+fieldset {
+    border: dashed;
+    width: 50%;
+    font-size: 20px;
+}
+
+legend {
+    color: rgb(235, 26, 26);
+}
+
+button {
+    margin: 10px;
+}
+
+button:hover {
+    background-color: rgb(32, 182, 124);
+    color: black;
+}
+
+a:hover {
+    background-color: rgb(104, 104, 151);
+}
