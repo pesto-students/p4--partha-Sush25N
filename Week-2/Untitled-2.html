@@ -1,81 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Assignment-2</title>
-    <meta ref="stylesheet" viewport="width=device-width" , initial-scale="1">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week Two Assignment</title>
     <style>
-        .main {
-            display: flex;
+        * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
         
-        .main>div {
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .main {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+        
+        .square {
             width: 100px;
             height: 100px;
         }
         
-        .a1 {
+        .red {
             background-color: red;
-            transform: transition 3s;
+            position: absolute;
+            transition: 2s;
+            transform-origin: top left;
+            transform: rotate(0deg);
         }
         
-        .a2 {
+        .yellow {
             background-color: yellow;
-            transform: transition 3s;
+            position: absolute;
+            transition: 2s;
+            transform-origin: top right;
+            transform: rotate(0deg);
+            margin-left: 100px;
         }
         
-        .a3 {
+        .blue {
             background-color: blue;
-            transform: transition 3s;
+            position: absolute;
+            transition: 2s;
+            transform-origin: bottom left;
+            transform: rotate(0deg);
+            margin-top: 100px;
         }
         
-        .a4 {
+        .green {
             background-color: green;
-            transform: transition 3s;
-        }
-        /* .main:hover { 
-            transform: rotate(45deg);
-        } */
-        
-        .a1:hover {
-            transform: rotate(45deg) translateZ(50px);
+            position: absolute;
+            transition: 2s;
+            transform-origin: bottom right;
+            transform: rotate(0deg);
+            margin-top: 100px;
+            margin-left: 100px;
         }
         
-        .a2:hover {
-            transform: rotate(-45deg);
+        h1 {
+            margin-top: 80px;
+            margin-left: 80px;
+            position: absolute;
         }
         
-        .a3:hover {
-            transform: rotate(45deg);
+        .main:hover .red {
+            transform: rotate(90deg);
         }
         
-        .a4:hover {
-            transform: rotate(-45deg);
+        .main:hover .green {
+            transform: rotate(90deg);
+        }
+        
+        .main:hover .yellow {
+            transform: rotate(-90deg);
+        }
+        
+        .main:hover .blue {
+            transform: rotate(-90deg);
         }
     </style>
 </head>
 
 <body>
-
     <div class="main">
-        <div class="a1">Item-1</div>
-        <div class="a2">Item-2</div>
-
+        <h1>Hi!!</h1>
+        <div class="square red"></div>
+        <div class="square yellow"></div>
+        <div class="square blue"></div>
+        <div class="square green"></div>
     </div>
-
-    <div>
-        Hi!
-    </div>
-
-    <!-- <div class="main"> -->
-    <div class="main">
-        <div class="a3">Item-3</div>
-        <div class="a4">Item-4</div>
-    </div>
-
-
 </body>
 
-</htm
+</html>
