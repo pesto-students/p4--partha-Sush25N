@@ -19,3 +19,5 @@ increment();
 increment();
 increment();
 console.log();
+
+//Answer is undefined.
