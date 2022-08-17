@@ -18,6 +18,6 @@ const [increment, log] = createIncrement();
 increment();
 increment();
 increment();
-console.log();
+console.log(createIncrement);
 
 //Answer is undefined.
