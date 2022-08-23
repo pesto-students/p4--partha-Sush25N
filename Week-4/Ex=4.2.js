@@ -1,4 +1,4 @@
-<!-- https://js-dk14ox.stackblitz.io -->
+// https://js-dk14ox.stackblitz.io
 
 
 var Person = function() {};
