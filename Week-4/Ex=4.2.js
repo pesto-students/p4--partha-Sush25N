@@ -3,21 +3,18 @@
 
 var Person = function() {};
 
-Person.prototype.initialize = function(name, age)
-{
-  this.name = name;
-  this.age = age;
+Person.prototype.initialize = function(name, age) {
+    this.name = name;
+    this.age = age;
 }
-Person.prototype.describe = function()
-{
+Person.prototype.describe = function() {
     return this.name + ", " + this.age;
 }
 
 var Teacher = function() {};
 Teacher.prototype = new Person();
 
-Teacher.prototype.learn = function(subject)
-{
+Teacher.prototype.learn = function(subject) {
     console.log(this.name + " teach " + subject);
 }
 
